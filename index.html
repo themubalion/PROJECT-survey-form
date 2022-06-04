@@ -10,7 +10,7 @@
   <body>
     <h1 id="title">Mubalion Survey Form</h1>
     <p id="description">Thank for taking time to fill this survey form</p>
-    <div id="form"><form id="survey-form">
+    <div id="form"><form id="survey-form" netlify>
       <label id="name-label">Name<input type="text" placeholder="Enter your name" id="name" required></label>
       <label id="email-label">
         Email<input type="email" id="email" placeholder="Enter your Email" required>
@@ -38,7 +38,7 @@
           </option>
         </select>
       </label>
-      <label>
+      <label id="radiotext">
         How much marks will you give this wesite out of 10?
       </label>
       <label class="radio" value="full">
@@ -48,10 +48,7 @@
           </span>
       </label>
       <label class="radio">
-        <input type="radio" name="preference">
-        <span>
-          above 7.5 points
-        </span>
+        <input type="radio" name="preference"> above 5 points
       </label>
       <label class="radio">
         <input type="radio" name="preference">
@@ -62,17 +59,17 @@
         <textarea placeholder="Enter your comments..."></textarea>
       </label>
       <div id ="check">
-      <label>
+      <label class="checkbox">
         What do you want me to learn next?
       </label>
-      <label>
+      <label class="checkbox">
         <input type="checkbox" value="value1"> MERN Stack
       </label>
-      <label>
+      <label class="checkbox">
         <input type="checkbox" value="value2">
         Backened development 
       </label>
-      <label>
+      <label class="checkbox">
         <input type="checkbox" value="value3">
         Full Stack development 
       </label>
