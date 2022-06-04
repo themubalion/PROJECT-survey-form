@@ -11,16 +11,16 @@
     <h1 id="title">Mubalion Survey Form</h1>
     <p id="description">Thank for taking time to fill this survey form</p>
     <div id="form"><form id="survey-form" netlify>
-      <label id="name-label">Name<input type="text" placeholder="Enter your name" id="name" required></label>
+      <label id="name-label">Name<input type="text" placeholder="Enter your name" id="name" required name="Name" name="Name"></label>
       <label id="email-label">
-        Email<input type="email" id="email" placeholder="Enter your Email" required>
+        Email<input type="email" id="email" placeholder="Enter your Email" required name="Email">
       </label>
       <label id="number-label">
-        Age(optional)<input type="number" id="number" min="18" max="60" required placeholder="Age in numbers">
+        Age(optional)<input type="number" id="number" min="18" max="60" required placeholder="Age in numbers" name="Age">
       </label>
       <label id="dropdown-label">
         Which describes you best
-        <select id="dropdown">
+        <select id="dropdown" name="status">
           <option>
             Choose any one of the following
           </option>
@@ -56,21 +56,21 @@
       </label>
       <label>
         Describe your visit to this page
-        <textarea placeholder="Enter your comments..."></textarea>
+        <textarea placeholder="Enter your comments..." name="Explain the visit"></textarea>
       </label>
       <div id ="check">
       <label class="checkbox">
         What do you want me to learn next?
       </label>
       <label class="checkbox">
-        <input type="checkbox" value="value1"> MERN Stack
+        <input type="checkbox" value="value1" name="Mern stack"> MERN Stack
       </label>
       <label class="checkbox">
-        <input type="checkbox" value="value2">
+        <input type="checkbox" value="value2" name="backened development">
         Backened development 
       </label>
       <label class="checkbox">
-        <input type="checkbox" value="value3">
+        <input type="checkbox" value="value3" name="full stack development">
         Full Stack development 
       </label>
       <label>
